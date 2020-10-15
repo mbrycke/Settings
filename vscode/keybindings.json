@@ -47,5 +47,15 @@
   {
     "key": "ctrl+alt+-",
     "command": "-workbench.action.navigateBack"
-  }
+  },
+   {
+        "key": "/",
+        "command": "filesExplorer.findInFolder",
+        "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+   {
+        "key": "escape",
+        "command": "workbench.view.explorer" ,
+        "when": "sideBarFocus"
+    },
 ]
