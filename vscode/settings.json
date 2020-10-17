@@ -1,18 +1,7 @@
 {
   "files.autoSave": "afterDelay",
   "vim.easymotion": true,
-  //   "vim.sneak": true,
-  //   "vim.incsearch": true,
-  // Remap <leader><leader> to just <leader> which simplify easymotion
-  // "vim.normalModeKeyBindingsNonRecursive": [
-  //   {
-  //     "before": ["<leader>"],
-  //     "after": ["<leader>", "<leader>"]
-  //   }
-  // ],
-
   "vim.useSystemClipboard": true,
-  //   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
@@ -21,7 +10,6 @@
     }
   ],
   "window.titleBarStyle": "custom",
-  //   "editor.wordWrap": "bounded",
   "window.zoomLevel": 0,
   "python.venvPath": "/home/mattias/anaconda3/envs",
   "vim.leader": "<space>",
@@ -29,35 +17,111 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.wordWrap": "on",
-  // "terminal.integrated.inheritEnv": false,
   "editor.acceptSuggestionOnEnter": "off",
-  // "terminal.integrated.shell.linux": "/bin/bash",
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
-  //   "python.dataScience.sendSelectionToInteractiveWindow": true,
-  // "terminal.integrated.inheritEnv": false,
-  //   "workbench.colorCustomizations": {
-  //     "window.activeBorder": "#00d100",
-  //     "window.inactiveBorder": "#fff490"
-  //   },
-  //   "terminal.integrated.shell.linux": "/bin/sh",
   "vim.neovimPath": "/usr/bin/nvim",
   "vim.enableNeovim": true,
-  //   "html.mirrorCursorOnMatchingTag": false
-  "vim.visualModeKeyBindingsNonRecursive": [
-    // {
-    //   "before": ["g", "<C-a>"],
-    //   "commands": ["progressive.incrementBy1"]
-    // }
-  ],
-  // "vim.leader": "<space>",
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  // ],
   "vim.visualModeKeyBindings": [
     {
       "before": ["f", "d"],
       "after": ["<Esc>"]
     }
   ],
+
   "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "a"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusFirstEditorGroup",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusSecondEditorGroup",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusThirdEditorGroup",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openEditorAtIndex1",
+          "args": []
+        }
+      ]
+    },
+{
+      "before": ["<leader>", "w"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openEditorAtIndex2",
+          "args": []
+        }
+      ]
+    },
+{
+      "before": ["<leader>", "e"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openEditorAtIndex3",
+          "args": []
+        }
+      ]
+    },
+{
+      "before": ["<leader>", "r"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openEditorAtIndex4",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "0"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.explorer",
+          "args": []
+        }
+      ]
+    },
+  {
+      "before": ["<leader>", "f"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.explorer",
+          "args": []
+        }
+      ]
+    },
     {
       "before": ["<leader>", "1"],
       "after": [],
@@ -99,46 +163,6 @@
       ]
     },
     {
-      "before": ["<leader>", "5"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusFifthEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "6"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusSixthEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "7"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusSeventhEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "8"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusEighthEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    {
       "before": ["<leader>", "b", "b"],
       "after": [],
       "commands": [
@@ -150,11 +174,10 @@
     },
 
     {
-      "before": ["<leader>", "f", "f"],
+      "before": ["<leader>", "o", "f"],
       "after": [],
       "commands": [
         {
-          // "command": "file-browser.open",
           "command": "workbench.action.files.openFile",
           "args": [],
           "when": "!isMac"
@@ -163,7 +186,7 @@
     },
 
     {
-      "before": ["<leader>", "p", "f"],
+      "before": ["<leader>", "p"],
       "after": [],
       "commands": [
         {
@@ -173,7 +196,17 @@
       ]
     },
     {
-      "before": ["<leader>", "p", "l"],
+      "before": ["<leader>", "t"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "o", "d"],
       "after": [],
       "commands": [
         {
@@ -183,7 +216,7 @@
       ]
     },
     {
-      "before": ["<leader>", "p", "p"],
+      "before": ["<leader>", "o", "r"],
       "after": [],
       "commands": [
         {
@@ -191,8 +224,55 @@
           "args": []
         }
       ]
-    }
+    },
+    {
+      "before": ["<leader>", "b", "l"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.moveEditorToNextGroup",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "b", "h"],
+      "after": [],
+      "commands": [
+        {
+          // "command": "workbench.action.moveEditorToPreviousGroup",
+          // "args": []
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "cd '${fileDirname}'\u000D" }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "<leader>", "c"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "cd '${fileDirname}'\u000D" }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.scm",
+          "args": []
+        }
+      ]
+    },
+    
   ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#121c2b"
+  },
+
   "vim.easymotionDimBackground": false,
   "vim.easymotionMarkerBackgroundColor": "#ffffff",
   "editor.minimap.enabled": true,
@@ -202,5 +282,6 @@
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#d60000",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#2b48ff",
   "vim.easymotionMarkerForegroundColorOneChar": "#414354",
-  //   "terminal.integrated.shell.linux": "/bin/bash"
+  "window.menuBarVisibility": "default",
+  "workbench.activityBar.visible": false
 }
