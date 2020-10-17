@@ -48,14 +48,37 @@
     "key": "ctrl+alt+-",
     "command": "-workbench.action.navigateBack"
   },
-   {
-        "key": "/",
-        "command": "filesExplorer.findInFolder",
-        "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
-    },
-   {
-        "key": "escape",
-        "command": "workbench.view.explorer" ,
-        "when": "sideBarFocus"
-    },
+  {
+    "key": "/",
+    "command": "filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.view.explorer",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+
+  {
+    "key": "shift+x",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "filesExplorerFocus"
+  },
+
+  {
+    "key": "ctrl+alt+space",
+    "command": "filesExplorer.openFilePreserveFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+
+  {
+    "key": "space",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
 ]
+
