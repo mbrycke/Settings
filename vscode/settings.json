@@ -194,11 +194,13 @@
     }
   ],
   "vim.easymotionDimBackground": false,
-  "vim.easymotionMarkerBackgroundColor": "#242fff",
+  "vim.easymotionMarkerBackgroundColor": "#ffffff",
   "editor.minimap.enabled": true,
   "python.pythonPath": "/home/mattias/anaconda3/envs/webdev/bin/python",
   "editor.minimap.maxColumn": 45,
   "python.dataScience.interactiveWindowMode": "perFile",
-
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#d60000",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#2b48ff",
+  "vim.easymotionMarkerForegroundColorOneChar": "#414354",
   //   "terminal.integrated.shell.linux": "/bin/bash"
 }
