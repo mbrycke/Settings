@@ -62,58 +62,58 @@
         }
       ]
     },
-    {
-      "before": ["<leader>", "q"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex1",
-          "args": []
-        }
-      ]
-    },
-{
-      "before": ["<leader>", "w"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex2",
-          "args": []
-        }
-      ]
-    },
-{
-      "before": ["<leader>", "e"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex3",
-          "args": []
-        }
-      ]
-    },
-{
-      "before": ["<leader>", "r"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex4",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "0"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.view.explorer",
-          "args": []
-        }
-      ]
-    },
+//     {
+//       "before": ["<leader>", "q"],
+//       "after": [],
+//       "commands": [
+//         {
+//           "command": "workbench.action.openEditorAtIndex1",
+//           "args": []
+//         }
+//       ]
+//     },
+// {
+//       "before": ["<leader>", "w"],
+//       "after": [],
+//       "commands": [
+//         {
+//           "command": "workbench.action.openEditorAtIndex2",
+//           "args": []
+//         }
+//       ]
+//     },
+// {
+//       "before": ["<leader>", "e"],
+//       "after": [],
+//       "commands": [
+//         {
+//           "command": "workbench.action.openEditorAtIndex3",
+//           "args": []
+//         }
+//       ]
+//     },
+// {
+//       "before": ["<leader>", "r"],
+//       "after": [],
+//       "commands": [
+//         {
+//           "command": "workbench.action.openEditorAtIndex4",
+//           "args": []
+//         }
+//       ]
+//     },
+    // {
+    //   "before": ["<leader>", "0"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.view.explorer",
+    //       "args": []
+    //     }
+    //   ]
+    // },
   {
-      "before": ["<leader>", "f"],
+      "before": ["<leader>", "e"],
       "after": [],
       "commands": [
         {
@@ -258,11 +258,31 @@
       ]
     },
     {
-      "before": ["<leader>", "g"],
+      "before": ["<leader>", "v"],
       "after": [],
       "commands": [
         {
           "command": "workbench.view.scm",
+          "args": []
+        }
+      ]
+    },
+  {
+      "before": ["<leader>", "g"],
+      "after": [],
+      "commands": [
+        {
+          "command":"workbench.action.focusNextGroup",
+          "args": []
+        }
+      ]
+    },
+  {
+      "before": ["<leader>", "f"],
+      "after": [],
+      "commands": [
+        {
+          "command":"favorites.focus",
           "args": []
         }
       ]
@@ -283,5 +303,5 @@
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#2b48ff",
   "vim.easymotionMarkerForegroundColorOneChar": "#414354",
   "window.menuBarVisibility": "default",
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": true
 }
