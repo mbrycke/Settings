@@ -1,4 +1,3 @@
-
 // Place your key bindings in this file to overwrite the defaults
 [
   {
@@ -105,8 +104,17 @@
 { "key": "tab",          "command": "workbench.action.findInFiles",
                                      "when": "searchViewletVisible && !inputBoxFocus" },
 
+{ "key": "ctrl+l",                "command": "workbench.action.terminal.toggleTerminal" },
+
+// { "key": "ctrl+m",                "command": "workbench.actions.treeView.favorites.collapseAll" },
+
 
 // - workbench.actions.treeView.favorites.collapseAll
+// - workbench.actions.treeView.favorites.collapseAll
+{ "key": "ctrl+.",                "command": "workbench.action.terminal.toggleTerminal",
+"when":"favoritesExplorerFocus" },
+
+
 
 
 ]
