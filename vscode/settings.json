@@ -1,366 +1,368 @@
+
 {
-  "files.autoSave": "afterDelay",
-  "vim.easymotion": true,
-  "vim.useSystemClipboard": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
+    "files.autoSave": "afterDelay",
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["f", "d"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 0,
+    "python.venvPath": "/home/mattias/anaconda3/envs",
+    "vim.leader": "<space>",
+  
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "on",
+    // "vim.neovimPath": "/usr/bin/nvim",
+    // "vim.enableNeovim": true,
+    // "vim.visualModeKeyBindingsNonRecursive": [
+    // ],
+    "vim.visualModeKeyBindings": [
+      {
+        "before": ["f", "d"],
+        "after": ["<Esc>"]
+      }
+    ],
+  
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["<leader>", "a"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.focusFirstEditorGroup",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "s"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.focusSecondEditorGroup",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "d"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.focusThirdEditorGroup",
+            "args": []
+          }
+        ]
+      },
+      //     {
+      //       "before": ["<leader>", "q"],
+      //       "after": [],
+      //       "commands": [
+      //         {
+      //           "command": "workbench.action.openEditorAtIndex1",
+      //           "args": []
+      //         }
+      //       ]
+      //     },
+      // {
+      //       "before": ["<leader>", "w"],
+      //       "after": [],
+      //       "commands": [
+      //         {
+      //           "command": "workbench.action.openEditorAtIndex2",
+      //           "args": []
+      //         }
+      //       ]
+      //     },
+      // {
+      //       "before": ["<leader>", "e"],
+      //       "after": [],
+      //       "commands": [
+      //         {
+      //           "command": "workbench.action.openEditorAtIndex3",
+      //           "args": []
+      //         }
+      //       ]
+      //     },
+      // {
+      //       "before": ["<leader>", "r"],
+      //       "after": [],
+      //       "commands": [
+      //         {
+      //           "command": "workbench.action.openEditorAtIndex4",
+      //           "args": []
+      //         }
+      //       ]
+      //     },
+      // {
+      //   "before": ["<leader>", "0"],
+      //   "after": [],
+      //   "commands": [
+      //     {
+      //       "command": "workbench.view.explorer",
+      //       "args": []
+      //     }
+      //   ]
+      // },
+      {
+        "before": ["<leader>", "e"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.view.explorer",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "b", "b"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.showAllEditors",
+            "args": []
+          }
+        ]
+      },
+  
+      {
+        "before": ["<leader>", "o", "f"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.files.openFile",
+            "args": [],
+            "when": "!isMac"
+          }
+        ]
+      },
+  
+      {
+        "before": ["<leader>", "p"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.quickOpen",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "t"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.showCommands",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "o", "d"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.files.openFolder",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "o", "r"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.openRecent",
+            "args": []
+          }
+        ]
+      },
+  
+      {
+        "before": ["<leader>", "1"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.openEditorAtIndex1",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "2"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.openEditorAtIndex2",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "3"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.openEditorAtIndex3",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "4"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.openEditorAtIndex4",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "5"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.openEditorAtIndex5",
+            "args": []
+          }
+        ]
+      },
+  
+      {
+        "before": ["<leader>", "l"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.nextEditorInGroup",
+            "args": []
+          }
+        ]
+      },
+  
+      {
+        "before": ["<leader>", "h"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.previousEditorInGroup",
+            "args": []
+          }
+        ]
+      },
+  
+      {
+        "before": ["<leader>", "b", "l"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.moveEditorToNextGroup",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "<leader>", "b", "l"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.moveEditorToPreviousGroup",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "b", "h"],
+        "after": [],
+        "commands": [
+          {
+            // "command": "workbench.action.moveEditorToPreviousGroup",
+            // "args": []
+            "command": "workbench.action.terminal.sendSequence",
+            "args": { "text": "cd '${fileDirname}'\u000D" }
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "<leader>", "c"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.terminal.sendSequence",
+            "args": { "text": "cd '${fileDirname}'\u000D" }
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "v"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.view.scm",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "g"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.focusNextGroup",
+            "args": []
+          }
+        ]
+      },
     {
-      "before": ["f", "d"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
-  "python.venvPath": "/home/mattias/anaconda3/envs",
-  "vim.leader": "<space>",
+        "before": ["<leader>", "m"],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.toggleEditorWidths",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": ["<leader>", "f"],
+        "after": [],
+        "commands": [
+          {
+            "command": "favorites.focus",
+            "args": []
+          }
+        ]
+      }
+    ],
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#121c2b"
+    },
+  
+    "vim.easymotionDimBackground": false,
+    "vim.easymotionMarkerBackgroundColor": "#ffffff",
+    "editor.minimap.enabled": true,
+    "python.pythonPath": "/home/mattias/anaconda3/envs/webdev/bin/python",
+    "editor.minimap.maxColumn": 35,
+    "python.dataScience.interactiveWindowMode": "perFile",
+    "vim.easymotionMarkerForegroundColorTwoCharFirst": "#d60000",
+    "vim.easymotionMarkerForegroundColorTwoCharSecond": "#2b48ff",
+    "vim.easymotionMarkerForegroundColorOneChar": "#414354",
+    "window.menuBarVisibility": "default",
+    "workbench.activityBar.visible": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "remote.SSH.remotePlatform": {
+      "zenv-0515.ad.zenuity.com": "linux"
+    } // this seems to work even thought says unknown
+  }
 
-  "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false,
-  "editor.wordWrap": "on",
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.formatOnSave": true,
-  "editor.lineNumbers": "on",
-  "vim.neovimPath": "/usr/bin/nvim",
-  "vim.enableNeovim": true,
-  // "vim.visualModeKeyBindingsNonRecursive": [
-  // ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["f", "d"],
-      "after": ["<Esc>"]
-    }
-  ],
 
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>", "a"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusFirstEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "s"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusSecondEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusThirdEditorGroup",
-          "args": []
-        }
-      ]
-    },
-    //     {
-    //       "before": ["<leader>", "q"],
-    //       "after": [],
-    //       "commands": [
-    //         {
-    //           "command": "workbench.action.openEditorAtIndex1",
-    //           "args": []
-    //         }
-    //       ]
-    //     },
-    // {
-    //       "before": ["<leader>", "w"],
-    //       "after": [],
-    //       "commands": [
-    //         {
-    //           "command": "workbench.action.openEditorAtIndex2",
-    //           "args": []
-    //         }
-    //       ]
-    //     },
-    // {
-    //       "before": ["<leader>", "e"],
-    //       "after": [],
-    //       "commands": [
-    //         {
-    //           "command": "workbench.action.openEditorAtIndex3",
-    //           "args": []
-    //         }
-    //       ]
-    //     },
-    // {
-    //       "before": ["<leader>", "r"],
-    //       "after": [],
-    //       "commands": [
-    //         {
-    //           "command": "workbench.action.openEditorAtIndex4",
-    //           "args": []
-    //         }
-    //       ]
-    //     },
-    // {
-    //   "before": ["<leader>", "0"],
-    //   "after": [],
-    //   "commands": [
-    //     {
-    //       "command": "workbench.view.explorer",
-    //       "args": []
-    //     }
-    //   ]
-    // },
-    {
-      "before": ["<leader>", "e"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.view.explorer",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "b", "b"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.showAllEditors",
-          "args": []
-        }
-      ]
-    },
-
-    {
-      "before": ["<leader>", "o", "f"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.openFile",
-          "args": [],
-          "when": "!isMac"
-        }
-      ]
-    },
-
-    {
-      "before": ["<leader>", "p"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.quickOpen",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.showCommands",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "o", "d"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.openFolder",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "o", "r"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openRecent",
-          "args": []
-        }
-      ]
-    },
-
-    {
-      "before": ["<leader>", "1"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex1",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "2"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex2",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "3"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex3",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "4"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex4",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "5"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.openEditorAtIndex5",
-          "args": []
-        }
-      ]
-    },
-
-    {
-      "before": ["<leader>", "l"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.nextEditorInGroup",
-          "args": []
-        }
-      ]
-    },
-
-    {
-      "before": ["<leader>", "h"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.previousEditorInGroup",
-          "args": []
-        }
-      ]
-    },
-
-    {
-      "before": ["<leader>", "b", "l"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.moveEditorToNextGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "<leader>", "b", "l"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.moveEditorToPreviousGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "b", "h"],
-      "after": [],
-      "commands": [
-        {
-          // "command": "workbench.action.moveEditorToPreviousGroup",
-          // "args": []
-          "command": "workbench.action.terminal.sendSequence",
-          "args": { "text": "cd '${fileDirname}'\u000D" }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "<leader>", "c"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": { "text": "cd '${fileDirname}'\u000D" }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "v"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.view.scm",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "g"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.focusNextGroup",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "f"],
-      "after": [],
-      "commands": [
-        {
-          "command": "favorites.focus",
-          "args": []
-        }
-      ]
-    }
-  ],
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#121c2b"
-  },
-
-  "vim.easymotionDimBackground": false,
-  "vim.easymotionMarkerBackgroundColor": "#ffffff",
-  "editor.minimap.enabled": true,
-  "python.pythonPath": "/home/mattias/anaconda3/envs/webdev/bin/python",
-  "editor.minimap.maxColumn": 35,
-  "python.dataScience.interactiveWindowMode": "perFile",
-  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#d60000",
-  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#2b48ff",
-  "vim.easymotionMarkerForegroundColorOneChar": "#414354",
-  "window.menuBarVisibility": "default",
-  "workbench.activityBar.visible": true,
-  "editor.scrollbar.verticalScrollbarSize": 0 // this seems to work even thought says unknown
-  // "editor.overviewRulerBorder":false,
-
-  // "vim.normalModeKeyBindingsNonRecursive": [
-  //   {
-  //     "before": ["<space>"],
-  //     "commands": ["whichkey.show"]
-  //   }
-  // ],
-  // "vim.visualModeKeyBindingsNonRecursive": [
-  //   {
-  //     "before": ["<space>"],
-  //     "commands": ["whichkey.show"]
-  //   }
-  // ]
-}
 
