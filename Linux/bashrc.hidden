@@ -1,0 +1,16 @@
+alias vim="nvim"
+set -o vi
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
+# mouse settings (might have to be set in /etc/rc.local to work)
+imwheel -kill "4 5"
+imwheel
+#set pointer speed (change acceleration and coordinate transformation matrix)
+xinput --set-prop 8 298 0.1
+xinput --set-prop 8 157 2.400000, 0.000000, 0.000000, 0.000000, 2.400000, 0.000000, 0.000000, 0.000000, 1.000000
+
+#set capslock to control(left)(this is not needed since keyboard does this on its own, or you can change in ubuntu settings)
+#xmodmap -e "clear lock"
+#xmodmap -e "keycode 66 = Control_L"
+#xmodmap -e "add control =Control_L"
