@@ -198,7 +198,10 @@ bar {
 }
 #shortcut for chrome
 bindsym $mod+c exec google-chrome
+#remove bar on top of container (window)
 new_window 1pixel
+
+#set color for container
 client.focused              #5e5e5e #bababa #000000
 client.unfocused            #5e5e5e #242424 #000000
 client.focused_inactive     #5e5e5e #4a4a4a #000000
